@@ -4,6 +4,9 @@
   margin:0;
   border:0;
   padding:0;
+  --pastColor: grey;
+  --presentColor: red;
+  --futureColor: green;
 }
 
 title{
@@ -29,33 +32,33 @@ header{
 
 }
 
+
+
 header h1{}
 
 main{}
 
-footer{}
-
-
-/* * These classes will be used to change BG color of the cards */
-.past{
-  background-color:grey;
-}
-
-.present{
-background-color:red;
-}
-
-.future{
-background-color:green;
-}
-
 .fullSchedule{
-margin:auto;
-align-content: center;
+  margin:50px;
+  align-content: center;
 }
 
+.card{
+  border-style:solid;
+  border-color:black;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 75px;
+}
+
+label{
+margin:0;
+padding:10px;
+border-right:solid;
+border-right-color:black;
+}
 
 .lockButton{
-  background-color:#4666FF;
 }
 
