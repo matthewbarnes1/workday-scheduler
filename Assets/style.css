@@ -1,8 +1,33 @@
-*{}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Libre+Baskerville&family=Roboto+Slab:wght@100;400&display=swap');
 
-body{}
+:root{
+  margin:0;
+  border:0;
+  padding:0;
+}
 
-header{}
+title{
+  display:none;
+}
+
+*{
+  flex-wrap:wrap;
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Libre Baskerville', serif;
+  font-family: 'Roboto Slab', serif;
+}
+
+body{
+margin:0;
+}
+
+header{
+  text-align:center;
+  border-bottom: 5px solid;
+  margin-bottom:10px;
+  width:100%;
+
+}
 
 header h1{}
 
@@ -12,8 +37,25 @@ footer{}
 
 
 /* * These classes will be used to change BG color of the cards */
-.history{}
+.past{
+  background-color:grey;
+}
 
-.current{}
+.present{
+background-color:red;
+}
 
-.future{}
+.future{
+background-color:green;
+}
+
+.fullSchedule{
+margin:auto;
+align-content: center;
+}
+
+
+.lockButton{
+  background-color:#4666FF;
+}
+
