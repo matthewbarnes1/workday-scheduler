@@ -3,24 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="Assets/style.css" />
-    <link rel="resetsheet" type="text/css" href="Assets/reset.css" />
-    <title>Work Day Scheduler</title>
+    <title>Daily Scheduler</title>
+    <link rel="stylesheet" href="Assets/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
   </head>
-
   <body>
     <header>
       <h1>Work Day Scheduler</h1>
-      <p>The simplest scheduler for your work day!</p>
+      <p>The only scheduler you need for your work days!</p>
       <p id="timeEl">Loading</p>
     </header>
 
-    <main>
+    <div id="scheduler">
+      <div class="time-slot" id="hour-9">
+        <label>9 AM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-9')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-10">
+        <label>10 AM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-10')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-11">
+        <label>11 AM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-11')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-12">
+        <label>12 PM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-12')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-13">
+        <label>1 PM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-13')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-14">
+        <label>2 PM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-14')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-15">
+        <label>3 PM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-15')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-16">
+        <label>4 PM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-16')">Lock in</button>
+      </div>
+      <div class="time-slot" id="hour-17">
+        <label>5 PM:</label>
+        <input type="text" class="scheduleInput" />
+        <button onclick="toggleSchedule('hour-17')">Lock in</button>
+      </div>
+    </div>
 
-
-    </main>
-
-    <script src="Develop/script.js" rel="localscript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="Develop/script.js"></script>
   </body>
 </html>
